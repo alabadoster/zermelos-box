@@ -32,7 +32,7 @@
 					"id" : "obj-30",
 					"maxclass" : "bpatcher",
 					"name" : "zermDCO~.maxpat",
-					"numinlets" : 6,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 75.0, 120.0, 90.0, 75.0 ]
@@ -44,7 +44,7 @@
 					"id" : "obj-27",
 					"maxclass" : "bpatcher",
 					"name" : "zermDCO~.maxpat",
-					"numinlets" : 6,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 45.0, 285.0, 90.0, 75.0 ]
@@ -272,7 +272,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 1 ],
+					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
@@ -281,7 +281,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 1 ],
+					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
