@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 456.0, 182.0, 763.0, 480.0 ],
+		"rect" : [ 517.0, 217.0, 763.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -31,55 +31,27 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-32",
+					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "float" ],
-					"patching_rect" : [ 90.0, 90.0, 32.5, 20.0 ],
-					"text" : "t b f"
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 330.0, 210.0, 55.0, 20.0 ],
+					"text" : "* 10000."
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-31",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 180.0, 60.0, 150.0, 20.0 ],
-					"text" : "(harmonicity ratio)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
+					"fontsize" : 9.0,
 					"frgb" : 0.0,
 					"id" : "obj-28",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.0, 210.0, 120.0, 20.0 ],
+					"patching_rect" : [ 375.0, 195.0, 94.0, 17.0 ],
 					"text" : "(modulation index)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-24",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 90.0, 120.0, 32.5, 20.0 ],
-					"text" : "* 1."
 				}
 
 			}
@@ -90,13 +62,13 @@
 					"fontsize" : 9.0,
 					"id" : "obj-22",
 					"maxclass" : "flonum",
-					"maximum" : 1000000.0,
+					"maximum" : 1.0,
 					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 195.0, 210.0, 40.0, 17.0 ],
+					"patching_rect" : [ 330.0, 180.0, 40.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 60.0, 45.0, 17.0 ]
 				}
@@ -109,13 +81,13 @@
 					"fontsize" : 9.0,
 					"id" : "obj-19",
 					"maxclass" : "flonum",
-					"maximum" : 200.0,
+					"maximum" : 60000.0,
 					"minimum" : 0.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 135.0, 60.0, 40.0, 17.0 ],
+					"patching_rect" : [ 120.0, 60.0, 40.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 30.0, 45.0, 17.0 ]
 				}
@@ -147,7 +119,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 90.0, 165.0, 75.0, 60.0 ],
+					"patching_rect" : [ 90.0, 135.0, 210.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 150.0, 15.0, 75.0, 60.0 ]
 				}
@@ -161,24 +133,9 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 60.0, 315.0, 75.0, 60.0 ],
+					"patching_rect" : [ 60.0, 345.0, 225.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 75.0, 15.0, 75.0, 60.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-26",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 405.0, 30.0, 180.0, 33.0 ],
-					"text" : "this is just simpleFM~ with zermDCO~ instead of cycle~"
 				}
 
 			}
@@ -192,10 +149,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 105.0, 150.0, 60.0, 17.0 ],
+					"patching_rect" : [ 210.0, 105.0, 60.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 150.0, 0.0, 69.0, 17.0 ],
-					"text" : "fm",
+					"text" : "fm osc",
 					"textjustification" : 1
 				}
 
@@ -210,10 +167,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 300.0, 60.0, 17.0 ],
+					"patching_rect" : [ 90.0, 315.0, 105.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 75.0, 0.0, 69.0, 17.0 ],
-					"text" : "voice",
+					"text" : "voice osc",
 					"textjustification" : 1
 				}
 
@@ -228,7 +185,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 180.0, 83.0, 17.0 ],
+					"patching_rect" : [ 375.0, 180.0, 83.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 45.0, 60.0, 17.0 ],
 					"text" : "fm depth"
@@ -245,10 +202,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 165.0, 30.0, 84.0, 17.0 ],
+					"patching_rect" : [ 150.0, 30.0, 84.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 15.0, 75.0, 17.0 ],
-					"text" : "fm freq ratio"
+					"text" : "fm freq (hz)"
 				}
 
 			}
@@ -259,13 +216,14 @@
 					"fontsize" : 9.0,
 					"frgb" : 0.0,
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 30.0, 65.0, 17.0 ],
+					"patching_rect" : [ 45.0, 30.0, 30.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 15.0, 45.0, 17.0 ],
-					"text" : "freq"
+					"text" : "freq (hz)"
 				}
 
 			}
@@ -304,37 +262,37 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 90.0, 240.0, 35.0, 19.0 ],
-					"text" : "*~ 1."
+					"text" : "*~ 0."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Modulation index",
+					"comment" : "fm depth (mod index)",
 					"id" : "obj-15",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 180.0, 21.0, 21.0 ]
+					"patching_rect" : [ 330.0, 150.0, 21.0, 21.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Harmonicity ratio",
+					"comment" : "fm freq",
 					"id" : "obj-16",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 30.0, 21.0, 21.0 ]
+					"patching_rect" : [ 120.0, 30.0, 21.0, 21.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Carrier frequency",
+					"comment" : "freq (carrier)",
 					"id" : "obj-17",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -344,22 +302,17 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 11.595187,
-					"frgb" : 0.0,
-					"id" : "obj-18",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 66.0, 436.0, 59.0, 19.0 ],
-					"text" : "FM signal"
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
- ],
-		"lines" : [ 			{
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"disabled" : 0,
@@ -385,15 +338,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 24.5, 233.0, 69.5, 233.0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -427,7 +371,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
+					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
@@ -436,20 +380,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
+					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 204.5, 237.0, 115.5, 237.0 ],
 					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -467,25 +401,8 @@
 					"destination" : [ "obj-12", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 99.5, 229.0, 99.5, 229.0 ],
 					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-32", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-32", 0 ]
 				}
 
 			}
