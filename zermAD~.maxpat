@@ -29,6 +29,17 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "bang at end of decay",
+					"id" : "obj-4",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 240.0, 360.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-3",
@@ -134,7 +145,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 360.0, 75.0, 20.0 ],
+					"patching_rect" : [ 90.0, 360.0, 75.0, 20.0 ],
 					"text" : "output env"
 				}
 
@@ -307,6 +318,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -415,8 +435,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-67" : [ "live.dial[4]", "att", 0 ],
-			"obj-2" : [ "live.dial[5]", "dec", 0 ]
+			"obj-2" : [ "live.dial[5]", "dec", 0 ],
+			"obj-67" : [ "live.dial[4]", "att", 0 ]
 		}
 ,
 		"dependency_cache" : [  ]

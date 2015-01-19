@@ -186,17 +186,18 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-47",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 120.0, 75.0, 20.0 ],
-					"text" : "tune sweep"
+					"patching_rect" : [ 150.0, 105.0, 75.0, 33.0 ],
+					"text" : "tune depth (sweep)"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "tune sweep (0-1)",
+					"comment" : "tune depth (0-1)",
 					"id" : "obj-46",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -258,13 +259,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 165.0, 300.0, 75.0, 20.0 ],
-					"text" : "tune"
+					"text" : "pitch"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "tune (0-1)",
+					"comment" : "pitch (0-1)",
 					"id" : "obj-40",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -284,13 +285,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 150.0, 225.0, 75.0, 20.0 ],
-					"text" : "tune depth"
+					"text" : "tune"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "tune depth (0-1)",
+					"comment" : "tune (0-1)",
 					"id" : "obj-32",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -471,7 +472,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 480.0, 45.0, 20.0 ],
+					"patching_rect" : [ 405.0, 480.0, 90.0, 20.0 ],
 					"text" : "VCA"
 				}
 
@@ -485,7 +486,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 315.0, 480.0, 45.0, 20.0 ],
+					"patching_rect" : [ 315.0, 480.0, 90.0, 20.0 ],
 					"text" : "*~"
 				}
 
@@ -514,7 +515,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 540.0, 225.0, 97.0, 20.0 ],
-					"text" : "lores~ 60. 0.999"
+					"text" : "lores~ 150. 0.99"
 				}
 
 			}
@@ -570,7 +571,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 135.0, 180.0, 105.0, 20.0 ],
-					"text" : "pitch sweep EG"
+					"text" : "tune sweep EG"
 				}
 
 			}
@@ -796,7 +797,7 @@
 					"destination" : [ "obj-25", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 354.5, 450.0, 350.5, 450.0 ],
+					"midpoints" : [ 354.5, 450.0, 395.5, 450.0 ],
 					"source" : [ "obj-42", 0 ]
 				}
 
