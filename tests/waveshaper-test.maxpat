@@ -65,7 +65,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 855.0, 360.0, 45.0, 20.0 ],
+					"patching_rect" : [ 855.0, 285.0, 45.0, 20.0 ],
 					"text" : "VCA"
 				}
 
@@ -259,7 +259,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 825.0, 360.0, 20.0, 20.0 ]
+					"patching_rect" : [ 825.0, 285.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -696,22 +696,20 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-2" : [ "live.dial[5]", "dec", 0 ],
-			"obj-13" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-39::obj-67" : [ "live.dial[4]", "att", 0 ]
+			"obj-13" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "zermAD~.maxpat",
 				"bootpath" : "/Users/krlud/Code/zermelos-box",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zermShaper~.maxpat",
 				"bootpath" : "/Users/krlud/Code/zermelos-box",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}

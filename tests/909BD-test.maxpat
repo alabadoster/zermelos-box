@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 98.0, 170.0, 1276.0, 710.0 ],
+		"rect" : [ 204.0, 89.0, 1276.0, 762.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,13 +31,29 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-21",
-					"maxclass" : "newobj",
+					"frgb" : 0.0,
+					"id" : "obj-50",
+					"maxclass" : "comment",
 					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 720.0, 75.0, 75.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 405.0, 75.0, 20.0 ],
+					"text" : "decay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "bpatcher",
+					"name" : "zermControl~.maxpat",
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 165.0, 165.0, 33.0, 20.0 ],
-					"text" : "sig~"
+					"patching_rect" : [ 720.0, 90.0, 120.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 420.0, 120.0, 60.0 ]
 				}
 
 			}
@@ -45,13 +61,29 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-15",
-					"maxclass" : "newobj",
+					"frgb" : 0.0,
+					"id" : "obj-48",
+					"maxclass" : "comment",
 					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 585.0, 75.0, 75.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 315.0, 315.0, 75.0, 20.0 ],
+					"text" : "edge"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "bpatcher",
+					"name" : "zermControl~.maxpat",
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 210.0, 165.0, 33.0, 20.0 ],
-					"text" : "sig~"
+					"patching_rect" : [ 585.0, 90.0, 120.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 315.0, 330.0, 120.0, 60.0 ]
 				}
 
 			}
@@ -59,38 +91,89 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-14",
-					"maxclass" : "newobj",
+					"frgb" : 0.0,
+					"id" : "obj-46",
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 255.0, 165.0, 33.0, 20.0 ],
-					"text" : "sig~"
+					"numoutlets" : 0,
+					"patching_rect" : [ 450.0, 75.0, 75.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 315.0, 75.0, 20.0 ],
+					"text" : "pitch"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 255.0, 105.0, 60.0, 47.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.dial[20]",
-							"parameter_shortname" : "edge",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1,
-							"parameter_exponent" : 3.0
-						}
+					"id" : "obj-47",
+					"maxclass" : "bpatcher",
+					"name" : "zermControl~.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 450.0, 90.0, 120.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 330.0, 120.0, 60.0 ]
+				}
 
-					}
-,
-					"varname" : "live.dial[6]"
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-44",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 315.0, 75.0, 75.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 315.0, 225.0, 75.0, 20.0 ],
+					"text" : "tune"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "bpatcher",
+					"name" : "zermControl~.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 315.0, 90.0, 120.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 315.0, 240.0, 120.0, 60.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-43",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 180.0, 75.0, 75.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 225.0, 75.0, 20.0 ],
+					"text" : "tune depth"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "bpatcher",
+					"name" : "zermControl~.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 180.0, 90.0, 120.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 240.0, 120.0, 60.0 ]
 				}
 
 			}
@@ -116,7 +199,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 390.0, 105.0, 60.0, 47.0 ],
+					"patching_rect" : [ 765.0, 240.0, 60.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 375.0, 420.0, 60.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[17]",
@@ -141,7 +226,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 345.0, 105.0, 60.0, 47.0 ],
+					"patching_rect" : [ 765.0, 180.0, 60.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 315.0, 420.0, 60.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.dial[16]",
@@ -160,106 +247,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 300.0, 105.0, 60.0, 47.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.dial[12]",
-							"parameter_shortname" : "decay",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1,
-							"parameter_exponent" : 3.0
-						}
-
-					}
-,
-					"varname" : "live.dial[3]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 210.0, 105.0, 60.0, 47.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.dial[11]",
-							"parameter_shortname" : "pitch",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1,
-							"parameter_exponent" : 3.0
-						}
-
-					}
-,
-					"varname" : "live.dial[2]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 165.0, 105.0, 60.0, 47.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.dial[10]",
-							"parameter_shortname" : "tune",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1,
-							"parameter_exponent" : 3.0
-						}
-
-					}
-,
-					"varname" : "live.dial[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 120.0, 105.0, 60.0, 47.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.dial",
-							"parameter_shortname" : "tune depth",
-							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
-							"parameter_unitstyle" : 1,
-							"parameter_exponent" : 3.0
-						}
-
-					}
-,
-					"varname" : "live.dial"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",
@@ -267,7 +254,7 @@
 					"numinlets" : 8,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 90.0, 300.0, 135.0, 20.0 ],
+					"patching_rect" : [ 90.0, 465.0, 135.0, 20.0 ],
 					"text" : "zerm909BD~"
 				}
 
@@ -279,7 +266,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 90.0, 105.0, 20.0, 20.0 ]
+					"patching_rect" : [ 90.0, 105.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 480.0, 255.0, 60.0, 60.0 ]
 				}
 
 			}
@@ -291,9 +280,9 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 75.0, 345.0, 60.0, 90.0 ],
+					"patching_rect" : [ 75.0, 510.0, 60.0, 90.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 90.0, 495.0, 60.0, 90.0 ],
+					"presentation_rect" : [ 450.0, 345.0, 120.0, 120.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -331,7 +320,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 465.0, 60.0, 20.0 ],
+					"patching_rect" : [ 75.0, 630.0, 60.0, 20.0 ],
 					"text" : "dac~"
 				}
 
@@ -342,7 +331,6 @@
 					"destination" : [ "obj-20", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 99.5, 330.0, 125.5, 330.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -352,37 +340,7 @@
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 99.5, 330.0, 84.5, 330.0 ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 264.5, 295.0, 165.785721, 295.0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 219.5, 250.0, 149.214279, 250.0 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -391,7 +349,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 39.5, 450.0, 84.5, 450.0 ],
+					"midpoints" : [ 39.5, 618.0, 84.5, 618.0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -419,7 +377,7 @@
 					"destination" : [ "obj-17", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 94.75, 450.0, 125.5, 450.0 ],
+					"midpoints" : [ 94.75, 615.0, 125.5, 615.0 ],
 					"source" : [ "obj-20", 1 ]
 				}
 
@@ -435,29 +393,37 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 174.5, 240.0, 132.642853, 240.0 ],
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-3", 0 ]
+					"source" : [ "obj-41", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-1", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 4 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -472,21 +438,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 219.5, 153.0, 219.5, 153.0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 5 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 309.5, 240.0, 182.357147, 240.0 ],
-					"source" : [ "obj-7", 0 ]
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
@@ -495,7 +450,6 @@
 					"destination" : [ "obj-1", 6 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 354.5, 240.0, 198.928574, 240.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -505,28 +459,19 @@
 					"destination" : [ "obj-1", 7 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 399.5, 240.0, 215.5, 240.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-26::obj-67" : [ "live.dial[2]", "att", 0 ],
-			"obj-1::obj-26::obj-2" : [ "live.dial[1]", "dec", 0 ],
-			"obj-1::obj-42::obj-2" : [ "live.dial[18]", "dec", 0 ],
-			"obj-1::obj-43::obj-2" : [ "live.dial[21]", "dec", 0 ],
+			"obj-45::obj-3" : [ "live.dial[13]", "live.dial", 0 ],
+			"obj-49::obj-3" : [ "live.dial[2]", "live.dial", 0 ],
+			"obj-47::obj-3" : [ "live.dial[1]", "live.dial", 0 ],
 			"obj-8" : [ "live.dial[16]", "noise", 0 ],
 			"obj-9" : [ "live.dial[17]", "attack", 0 ],
-			"obj-1::obj-41::obj-67" : [ "live.dial[24]", "att", 0 ],
-			"obj-13" : [ "live.dial[20]", "edge", 0 ],
-			"obj-7" : [ "live.dial[12]", "decay", 0 ],
-			"obj-6" : [ "live.dial[11]", "pitch", 0 ],
-			"obj-1::obj-41::obj-2" : [ "live.dial[23]", "dec", 0 ],
-			"obj-1::obj-43::obj-67" : [ "live.dial[22]", "att", 0 ],
-			"obj-1::obj-42::obj-67" : [ "live.dial[19]", "att", 0 ],
-			"obj-4" : [ "live.dial[10]", "tune", 0 ],
-			"obj-3" : [ "live.dial", "tune depth", 0 ],
+			"obj-51::obj-3" : [ "live.dial[3]", "live.dial", 0 ],
+			"obj-41::obj-3" : [ "live.dial", "live.dial", 0 ],
 			"obj-20" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
@@ -546,6 +491,13 @@
 			}
 , 			{
 				"name" : "zermShaper~.maxpat",
+				"bootpath" : "/Users/krlud/Code/zermelos-box",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zermControl~.maxpat",
 				"bootpath" : "/Users/krlud/Code/zermelos-box",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
